@@ -1,14 +1,8 @@
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
-
+theme = "FixIt"
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
-hasCJKLanguage = true
-
-# 直接用云端模块，彻底抛弃本地 theme 设定
-[module]
-  [[module.imports]]
-    path = "github.com/hugo-fixit/FixIt"
 
 [params]
   themeStyle = "auto"

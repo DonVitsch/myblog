@@ -1,9 +1,16 @@
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
-
-# 直接引用官方模块路径
 theme = "github.com/hugo-fixit/FixIt"
 
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
-hasCJKLanguage = true
+
+# ==========================================
+# 终极免检放行指令：破解一切隐藏状态
+buildDrafts = true   # 强行编译草稿
+buildFuture = true   # 强行编译未来时间的文章
+buildExpired = true  # 强行编译过期文章
+# ==========================================
+
+[params]
+  themeStyle = "auto"

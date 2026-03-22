@@ -1,8 +1,9 @@
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
-theme = "FixIt"
+
+# 直接引用官方模块路径
+theme = "github.com/hugo-fixit/FixIt"
+
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
-
-[params]
-  themeStyle = "auto"
+hasCJKLanguage = true

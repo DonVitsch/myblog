@@ -4,13 +4,19 @@ theme = "github.com/hugo-fixit/FixIt"
 
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
-
-# ==========================================
-# 终极免检放行指令：破解一切隐藏状态
-buildDrafts = true   # 强行编译草稿
-buildFuture = true   # 强行编译未来时间的文章
-buildExpired = true  # 强行编译过期文章
-# ==========================================
+hasCJKLanguage = true
 
 [params]
   themeStyle = "auto"
+
+# ==========================================
+# 终极绝杀：强制开启“个人主页”模式
+# ==========================================
+[params.home]
+  profileMode = true
+
+[params.home.profile]
+  enable = true
+  avatarURL = "/images/avatar.png" # 就算你还没传图，它也会先显示个占位符
+  title = "DonVitsch"
+  subtitle = "单宁、代码与生活"

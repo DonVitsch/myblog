@@ -1,36 +1,27 @@
 # -------------------------------------------------------------------------------------
 # Hugo Configuration
-# See: https://gohugo.io/configuration/all/
 # -------------------------------------------------------------------------------------
 
-# 网站标题（显示在浏览器标签页和首页顶部）
+# 网站标题
 title = "DonVitsch's Blog"
 
-# 你的域名（必须带 https 和最后的斜杠）
+# 你的域名
 baseURL = "https://donvitsch.blog/"
 
-# 启用主题（删掉了之前的 # 号，这是最关键的一步！）
-theme = "FixIt"
+# [关键修改] 使用 Hugo 模块化引入主题，不再依赖本地 themes 文件夹
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-fixit/FixIt"
 
-# 默认语言设为中文
+# 默认语言
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
 languageName = "简体中文"
 
-# 开启中日韩文字支持（防止中文搜索或统计出问题）
+# 其他设置保持不变
 hasCJKLanguage = true
-
-# 版权声明（可以填你的名字）
 copyright = "© 2026 DonVitsch"
-
-# 是否使用 robots.txt（对搜索引擎友好）
 enableRobotsTXT = true
-
-# 是否显示 Git 提交信息
 enableGitInfo = true
-
-# 是否开启表情包支持
 enableEmoji = true
-
-# 首页显示的主要栏目
 mainSections = ["posts"]

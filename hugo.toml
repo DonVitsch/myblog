@@ -1,29 +1,14 @@
-# -------------------------------------------------------------------------------------
-# Hugo Configuration - DonVitsch 绝杀版
-# -------------------------------------------------------------------------------------
-
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
 
-# [核心修改] 这里的名字必须跟下面 module 的 path 对应
-theme = ["github.com/hugo-fixit/FixIt"]
-
-# 语言设置
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
-languageName = "简体中文"
 hasCJKLanguage = true
 
+# 直接用云端模块，彻底抛弃本地 theme 设定
 [module]
   [[module.imports]]
-    # 强制指定云端主题路径
     path = "github.com/hugo-fixit/FixIt"
 
-# 开启极简参数
 [params]
   themeStyle = "auto"
-
-enableEmoji = true
-enableGitInfo = true
-enableRobotsTXT = true
-copyright = "© 2026 DonVitsch"

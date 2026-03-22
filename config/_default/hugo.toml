@@ -3,29 +3,34 @@
 # See: https://gohugo.io/configuration/all/
 # -------------------------------------------------------------------------------------
 
-# website title
-title = ""
-# Hostname (and path) to the root
+# 网站标题（显示在浏览器标签页和首页顶部）
+title = "DonVitsch's Blog"
+
+# 你的域名（必须带 https 和最后的斜杠）
 baseURL = "https://donvitsch.blog/"
-# theme list
-# theme = ["FixIt"] # enable in your site config file
-# determines default content language ["en", "zh-cn", "fr", "pl", ...]
-defaultContentLanguage = "en"
-# language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "en"
-# language name ["English", "简体中文", "Français", "Polski", ...]
-languageName = "English"
-# whether to include Chinese/Japanese/Korean
-hasCJKLanguage = false
-# copyright description used only for seo schema
-copyright = ""
-# whether to use robots.txt
+
+# 启用主题（删掉了之前的 # 号，这是最关键的一步！）
+theme = "FixIt"
+
+# 默认语言设为中文
+defaultContentLanguage = "zh-cn"
+languageCode = "zh-cn"
+languageName = "简体中文"
+
+# 开启中日韩文字支持（防止中文搜索或统计出问题）
+hasCJKLanguage = true
+
+# 版权声明（可以填你的名字）
+copyright = "© 2026 DonVitsch"
+
+# 是否使用 robots.txt（对搜索引擎友好）
 enableRobotsTXT = true
-# whether to use git commit log
+
+# 是否显示 Git 提交信息
 enableGitInfo = true
-# whether to use emoji code
+
+# 是否开启表情包支持
 enableEmoji = true
-# the main sections of a site
-# if set, the MainSections method on the Site object returns the given sections,
-# otherwise it returns the section with the most pages.
-# mainSections = ["posts"]
+
+# 首页显示的主要栏目
+mainSections = ["posts"]

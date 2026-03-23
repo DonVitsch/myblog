@@ -20,21 +20,21 @@ buildFuture = true
 
   # --- 侧边栏配置 (让头像出来的关键) ---
   [params.sidebar]
-    enable = true          # 开启侧边栏
-    position = "left"      # 放在左边
-    profile = true         # 在侧边栏显示个人资料
-    sticky = true          # 页面滚动时侧边栏固定住
+    enable = true          
+    position = "left"      
+    profile = true         
+    sticky = true          
 
   # --- 个人资料页配置 ---
   [params.profile]
     enable = true
-    avatarURL = "/avatar.jpg" # 确保 static 目录下有这个文件
+    avatarURL = "/avatar.jpg" 
     title = "DonVitsch"
     subtitle = "宝宝不哭喝面条吧"
-    avatarCircle = true    # 头像切成圆形
-    social = true          # 开启社交图标显示
-    typeit = true          # 开启简介打字机效果
+    avatarCircle = true    
+    social = true         
+    typeit = true         
 
   # --- 社交链接配置 (图标会自动出现) ---
   [params.social]
-    GitHub = "DonVitsch"   # 只需填入你的 GitHub 用户名
+    GitHub = "DonVitsch"  

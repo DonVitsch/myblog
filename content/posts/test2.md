@@ -5,7 +5,7 @@ date: 2026-03-23T10:00:00+08:00
 author: "DonVitsch"
 draft: false
 tags: ["Cinema"]
-categories: [""]
+categories: ["颐指气使"]
 ---
 
 「挽救计划」并不好看，IMDb 8.5分 WTF、 故事很幼稚，剧本太一般了。英雄主义有点像国外战狼。着力拍了很多前置条件，然而期待了2个小时，

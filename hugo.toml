@@ -5,7 +5,7 @@ theme = "github.com/hugo-fixit/FixIt"
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
 
-# 强制编译所有隐藏状态
+# 强制编译所有状态
 buildDrafts = true
 buildFuture = true
 
@@ -13,16 +13,16 @@ buildFuture = true
 [author]
   name = "DonVitsch"
 
-# 全局参数配置（所有的参数都放在这一个标签下面）
+# 全局参数配置 (合并为一个，确保不报错)
 [params]
   themeStyle = "auto"
 
-  # 个人资料页配置 (侧边栏头像和简介)
+  # 个人资料页配置
   [params.profile]
     enable = true
     avatarURL = "/avatar.jpg"
     title = "DonVitsch"
-    subtitle = "宝宝不哭喝面条吧" # 很有个性的简介！
+    subtitle = "宝宝不哭喝面条吧"
     avatarCircle = true
     social = true
     typeit = true

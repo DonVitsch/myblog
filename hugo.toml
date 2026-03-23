@@ -9,27 +9,20 @@ languageCode = "zh-cn"
 buildDrafts = true
 buildFuture = true
 
-[params]
-  themeStyle = "auto"
-
-# 作者信息配置
+# 作者基本信息
 [author]
   name = "DonVitsch"
 
+# 全局参数配置（所有的参数都放在这一个标签下面）
 [params]
-  # 这里的 themeStyle 你已经有了，不用重复
   themeStyle = "auto"
 
   # 个人资料页配置 (侧边栏头像和简介)
   [params.profile]
     enable = true
-    # 因为图片在 static 根目录，直接写 /avatar.jpg
     avatarURL = "/avatar.jpg"
     title = "DonVitsch"
-    subtitle = "宝宝不哭喝面条吧"
-    # 是否显示头像为圆角
+    subtitle = "宝宝不哭喝面条吧" # 很有个性的简介！
     avatarCircle = true
-    # 是否显示社交图标
     social = true
-    # 是否开启打字机效果 (FixIt 特色功能)
     typeit = true

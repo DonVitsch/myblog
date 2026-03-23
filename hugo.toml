@@ -9,32 +9,41 @@ languageCode = "zh-cn"
 buildDrafts = true
 buildFuture = true
 
-# 作者基本信息
 [author]
   name = "DonVitsch"
   link = "https://donvitsch.blog/"
 
-# 全局参数配置
 [params]
   themeStyle = "auto"
 
-  # --- 侧边栏配置 (让头像出来的关键) ---
+  # 1. 顶部导航栏头像 (可选，会在左上角标题旁出个小头像)
+  [params.header]
+    [params.header.title]
+      avatar = "/avatar.jpg"
+      name = "DonVitsch"
+
+  # 2. 首页配置 (让头像出现在网页最中间)
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = "/avatar.jpg"
+      title = "DonVitsch"
+      subtitle = "宝宝不哭喝面条吧"
+      typeit = true
+      social = true
+
+  # 3. 侧边栏配置 (让头像出现在左侧/右侧)
   [params.sidebar]
-    enable = true          
-    position = "left"      
-    profile = true         
-    sticky = true          
-
-  # --- 个人资料页配置 ---
-  [params.profile]
     enable = true
-    avatarURL = "/avatar.jpg" 
-    title = "DonVitsch"
-    subtitle = "宝宝不哭喝面条吧"
-    avatarCircle = true    
-    social = true         
-    typeit = true         
+    position = "left"
+    # 注意：FixIt 新版本这里需要一个独立的 profile 块
+    [params.sidebar.profile]
+      enable = true
+      avatarURL = "/avatar.jpg"
+      title = "DonVitsch"
+      subtitle = "正啊，劲啊！🎸"
+      avatarCircle = true
 
-  # --- 社交链接配置 (图标会自动出现) ---
+  # 4. 社交链接
   [params.social]
-    GitHub = "DonVitsch"  
+    GitHub = "DonVitsch"

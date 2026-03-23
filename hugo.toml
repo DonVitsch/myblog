@@ -1,10 +1,25 @@
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
-theme = "github.com/janraasch/hugo-bearblog"
+theme = "github.com/nunocoracao/blowfish/v2"
 
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
 
+# 必须开启模块支持
+[module]
+  [[module.imports]]
+    path = "github.com/nunocoracao/blowfish/v2"
+
 [params]
-    author = "DonVitsch"
-    description = "宝宝不哭喝面条吧 🍜"
+    # 首页模式：名片卡片模式
+    header = { layout = "fixed" }
+    homepage = { layout = "card" }
+    
+    [params.author]
+        name = "DonVitsch"
+        image = "avatar.jpg"
+        headline = "宝宝不哭喝面条吧 🍜"
+        bio = ""
+        links = [
+            { github = "https://github.com/DonVitsch" }
+        ]

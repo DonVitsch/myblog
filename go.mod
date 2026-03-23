@@ -2,4 +2,6 @@ module github.com/DonVitsch/myblog
 
 go 1.21
 
-require github.com/CaiJimmy/hugo-theme-stack/v3 v3.34.2 // indirect
+require (
+	github.com/nunocoracao/blowfish/v2 v2.10.0 // indirect
+)

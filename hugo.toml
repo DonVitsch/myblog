@@ -1,6 +1,6 @@
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
-theme = "github.com/olOwOlo/hugo-theme-m10c"
+theme = "github.com/janraasch/hugo-bearblog"
 
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
@@ -8,11 +8,3 @@ languageCode = "zh-cn"
 [params]
     author = "DonVitsch"
     description = "宝宝不哭喝面条吧 🍜"
-    avatar = "avatar.jpg"
-    menu_item_separator = "·"
-
-[[menu.main]]
-    identifier = "posts"
-    name = "文章"
-    url = "/posts/"
-    weight = 10

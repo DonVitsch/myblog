@@ -1,33 +1,28 @@
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
-# 换成 Stack 主题的模块路径
-theme = "github.com/CaiJimmy/hugo-theme-stack/v3"
+theme = "github.com/adityatelange/hugo-PaperMod"
 
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
 
-# 基础作者信息
-[author]
-  name = "DonVitsch"
-
 [params]
-  # 侧边栏配置 (Stack 的灵魂)
-  [params.sidebar]
-    avatar = "avatar.jpg"      # 只要你 static 下有这张图，它必出！
-    title = "DonVitsch"
-    subtitle = "宝宝不哭喝面条吧 🍜"
-    
-  # 社交链接 (简单明了)
-  [[params.social]]
-    name = "GitHub"
-    identifier = "github"
-    url = "https://github.com/DonVitsch"
-    params = { icon = "brand-github" }
+    env = "production"
+    title = "DonVitsch's Blog"
+    description = "宝宝不哭喝面条吧"
+    author = "DonVitsch"
 
-# 菜单配置 (顺便帮你把 Archives 改成中文)
-[[menu.main]]
-  identifier = "archives"
-  name = "归档"
-  url = "/archives/"
-  weight = -1
-  params = { icon = "archives" }
+    # --- 关键：个人资料模式 (首页大头像) ---
+    [params.profileMode]
+        enabled = true
+        title = "DonVitsch"
+        subtitle = "宝宝不哭喝面条吧 🍜"
+        displayFullContent = true
+        # 只要你 static 目录下有这张图，它必出！
+        imageUrl = "avatar.jpg" 
+        imageWidth = 120
+        imageHeight = 120
+
+    # --- 社交链接 ---
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/DonVitsch"

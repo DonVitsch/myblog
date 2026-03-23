@@ -1,25 +1,49 @@
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
-theme = "github.com/nunocoracao/blowfish/v2"
+theme = "github.com/hugo-fixit/FixIt"
 
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
 
-# 必须开启模块支持
-[module]
-  [[module.imports]]
-    path = "github.com/nunocoracao/blowfish/v2"
+# 强制编译所有隐藏状态
+buildDrafts = true
+buildFuture = true
+
+[author]
+  name = "DonVitsch"
+  link = "https://donvitsch.blog/"
 
 [params]
-    # 首页模式：名片卡片模式
-    header = { layout = "fixed" }
-    homepage = { layout = "card" }
-    
-    [params.author]
-        name = "DonVitsch"
-        image = "avatar.jpg"
-        headline = "宝宝不哭喝面条吧 🍜"
-        bio = ""
-        links = [
-            { github = "https://github.com/DonVitsch" }
-        ]
+  themeStyle = "auto"
+
+  # 1. 顶部导航栏头像 (可选，会在左上角标题旁出个小头像)
+  [params.header]
+    [params.header.title]
+      avatar = "/avatar.jpg"
+      name = "DonVitsch"
+
+  # 2. 首页配置 (让头像出现在网页最中间)
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = "/avatar.jpg"
+      title = "DonVitsch"
+      subtitle = "宝宝不哭喝面条吧"
+      typeit = true
+      social = true
+
+  # 3. 侧边栏配置 (让头像出现在左侧/右侧)
+  [params.sidebar]
+    enable = true
+    position = "left"
+    # 注意：FixIt 新版本这里需要一个独立的 profile 块
+    [params.sidebar.profile]
+      enable = true
+      avatarURL = "/avatar.jpg"
+      title = "DonVitsch"
+      subtitle = "正啊，劲啊！🎸"
+      avatarCircle = true
+
+  # 4. 社交链接
+  [params.social]
+    GitHub = "DonVitsch"

@@ -1,12 +1,18 @@
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
-theme = "github.com/jpanther/congo/v2"
+theme = "github.com/olOwOlo/hugo-theme-m10c"
 
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
 
 [params]
-    [params.author]
-        name = "DonVitsch"
-        image = "avatar.jpg"
-        headline = "宝宝不哭喝面条吧 🍜"
+    author = "DonVitsch"
+    description = "宝宝不哭喝面条吧 🍜"
+    avatar = "avatar.jpg"
+    menu_item_separator = "·"
+
+[[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10

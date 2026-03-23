@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: DonVitsch/myblog # 你的仓库名
+  branch: main # 你的分支名
+
+media_folder: "static/images" # 图片存放路径
+public_folder: "/images" # 网页读取图片的路径
+
+collections:
+  - name: "posts"
+    label: "文章管理"
+    folder: "content/posts" # 文章存放路径
+    create: true # 允许新建文章
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # 自动生成的文件名格式
+    fields: # 这里就是你讨厌的手动输入部分，现在变成表单了！
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "date", widget: "datetime"}
+      - {label: "作者", name: "author", widget: "string", default: "DonVitsch"}
+      - {label: "草稿模式", name: "draft", widget: "boolean", default: false}
+      - {label: "分类", name: "categories", widget: "list"}
+      - {label: "标签", name: "tags", widget: "list"}
+      - {label: "正文内容", name: "body", widget: "markdown"}

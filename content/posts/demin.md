@@ -16,7 +16,7 @@ However, the true "Eureka" moment came from a tailor named Jacob Davis. Tired of
 
 In 1873, Strauss and Davis co-patented the riveted waist overall. This was the blueprint for the modern jean. Soon after, the legendary Levi’s 501 was born, featuring the iconic Two Horse Brand leather patch—a symbol of strength that remains a hallmark of quality today.
 
-2. The Soul: Denim and the Art of Selvedge 🧵
+2. The Soul: Denim and the Art of Selvedge 
 To a true denimhead (denim connoisseur), not all jeans are created equal. The "holy grail" consists of two things: authentic Denim and a Selvedge edge.
 
 What is Denim?

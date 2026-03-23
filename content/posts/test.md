@@ -3,8 +3,8 @@ title: "Test1"
 date: 2026-03-23T10:00:00+08:00
 author: "DonVitsch"
 draft: false
-tags: [""]
-categories: [""]
+tags: ["Thoughts"]
+categories: ["奇异搞笑"]
 ---
 
 突然意识到我是个变态怪咖。

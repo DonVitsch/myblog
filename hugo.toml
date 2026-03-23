@@ -15,30 +15,26 @@ buildFuture = true
     description = "宝宝不哭喝面条吧"
     author = "DonVitsch"
 
-    # --- 方案 2：关闭全屏模式，开启首页信息模式 ---
+    # --- 关键：换回最初的全屏大头像模式 ---
     [params.profileMode]
-        enabled = false  # 必须关闭这个，文章列表才会出来
-
-    [params.homeInfoParams]
-        Title = "DonVitsch 🍜"
-        Content = "宝宝不哭喝面条吧。欢迎来到我的碎碎念空间，这里有铁娘子，也有生活。"
+        enabled = true  # 重点：再次开启它！
+        title = "DonVitsch"
+        subtitle = "宝宝不哭喝面条吧 🍜"
+        # 只要你 static 目录下有这张图，它必出！
+        imageUrl = "/avatar.jpg" 
+        imageWidth = 120
+        imageHeight = 120
+        social = true
+        # 如果你想在这个大名片下面也显示文章标题，开启下面两行：
+        displayFullContent = true
+        maxContentLength = 100 # 如果你开启了显示内容，最好限制一下长度，否则太难看
 
     # --- 显示社交图标 ---
     [[params.socialIcons]]
         name = "github"
         url = "https://github.com/DonVitsch"
 
-    # --- 文章显示设置 ---
-    [params.assets]
-        disableHLJS = false # 开启代码高亮
-    
-    [params.label]
-        text = "DonVitsch's Blog"
-        # 这里的头像会出现在左上角标题旁边，很精致
-        icon = "/avatar.jpg" 
-        iconHeight = 35
-
-# --- 导航菜单配置 ---
+# --- 导航菜单配置 (加上菜单，这样你可以点进去看详细文章列表) ---
 [[menu.main]]
     identifier = "posts"
     name = "文章"
@@ -50,9 +46,3 @@ buildFuture = true
     name = "归档"
     url = "/archives/"
     weight = 20
-
-[[menu.main]]
-    identifier = "search"
-    name = "搜索"
-    url = "/search/"
-    weight = 30

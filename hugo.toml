@@ -1,48 +1,20 @@
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
-theme = "github.com/adityatelange/hugo-PaperMod"
+theme = "github.com/nunocoracao/blowfish/v2"
 
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
 
-# 强制编译草稿和未来的文章
-buildDrafts = true
-buildFuture = true
-
 [params]
-    env = "production"
-    title = "DonVitsch's Blog"
-    description = "宝宝不哭喝面条吧"
-    author = "DonVitsch"
-
-    # --- 关键：换回最初的全屏大头像模式 ---
-    [params.profileMode]
-        enabled = true  # 重点：再次开启它！
-        title = "DonVitsch"
-        subtitle = "宝宝不哭喝面条吧 🍜"
-        # 只要你 static 目录下有这张图，它必出！
-        imageUrl = "/avatar.jpg" 
-        imageWidth = 120
-        imageHeight = 120
-        social = true
-        # 如果你想在这个大名片下面也显示文章标题，开启下面两行：
-        displayFullContent = true
-        maxContentLength = 100 # 如果你开启了显示内容，最好限制一下长度，否则太难看
-
-    # --- 显示社交图标 ---
-    [[params.socialIcons]]
-        name = "github"
-        url = "https://github.com/DonVitsch"
-
-# --- 导航菜单配置 (加上菜单，这样你可以点进去看详细文章列表) ---
-[[menu.main]]
-    identifier = "posts"
-    name = "文章"
-    url = "/posts/"
-    weight = 10
-
-[[menu.main]]
-    identifier = "archives"
-    name = "归档"
-    url = "/archives/"
-    weight = 20
+    # 首页显示模式：名片模式
+    header = { layout = "fixed" }
+    homepage = { layout = "card" }
+    
+    [params.author]
+        name = "DonVitsch"
+        image = "avatar.jpg"
+        headline = "宝宝不哭喝面条吧 🍜"
+        bio = ""
+        links = [
+            { github = "https://github.com/DonVitsch" }
+        ]

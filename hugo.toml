@@ -1,20 +1,12 @@
 baseURL = "https://donvitsch.blog/"
 title = "DonVitsch's Blog"
-theme = "github.com/nunocoracao/blowfish/v2"
+theme = "github.com/jpanther/congo/v2"
 
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-cn"
 
 [params]
-    # 首页显示模式：名片模式
-    header = { layout = "fixed" }
-    homepage = { layout = "card" }
-    
     [params.author]
         name = "DonVitsch"
         image = "avatar.jpg"
         headline = "宝宝不哭喝面条吧 🍜"
-        bio = ""
-        links = [
-            { github = "https://github.com/DonVitsch" }
-        ]
